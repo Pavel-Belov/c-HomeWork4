@@ -52,8 +52,9 @@ Console.WriteLine("Массив: ");
 PrintArray(array);
 Console.WriteLine();
 
-double minEl = SearchMinMax(array)[0];
-double maxEl = SearchMinMax(array)[1];
+double[] minMaxArray = SearchMinMax(array);
+double minEl = minMaxArray[0];
+double maxEl = minMaxArray[1];
 double difference = maxEl - minEl;
 
 Console.WriteLine($"Минимальный элемент массива равен: {minEl}");
